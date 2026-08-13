@@ -52,8 +52,6 @@ Si hay *rules* o *constraints* de mayor nivel (higher order) en idioma para escr
 4. Sigue el patrón y espíritu del código para el *naming*.
 5. Por defecto, no inventes nombre híbridos (`getUsuarioById`, `obtenerUser`).
 
-
-
 ## *Slang* común en inglés
 
 - Git: el PR, el commit, el merge, el rebase, el stash, el branch, el review
@@ -71,8 +69,6 @@ Esta lista es el inglés de **soft**. En **mid** también puedes usar:
 - naming, casing, hardcodeado
 - override, default, mix
 - race, row, debounce, mount (en prosa, no solo como identificador)
-
-
 
 ## Términos en español
 
@@ -112,8 +108,6 @@ Si un híbrido (`crearUser`, `saveUsuario`) ya está en el código, cítalo. No 
 El *spanglish* no es ruido. Es español claro con algunos términos en inglés.
 
 - Por *default, o* por defecto, español latinoamericano neutro (tú).
-
-
 
 ## Good and bad
 
@@ -165,12 +159,9 @@ El *spanglish* no es ruido. Es español claro con algunos términos en inglés.
 
 > Sigue la convención de nombres del archivo.
 
-
-
 ## Autochequeo
 
 Antes de enviar:
 
 1. Asegúrate de que los identificadores coincidan con el código.
 2. Asegúrate de que el *mix* respete el `level` de `~/.spanglish.json`, los `overrides` persistidos, y el *override* de la *session*.
-

@@ -48,10 +48,7 @@ No inventes gustos. No persistas el *mix* default del `level`. Identificadores d
 1. Resuelve el *home*. El archivo es `{home}/.spanglish.json`.
 2. Si existe, léelo. Conserva `level` y cualquier campo que no estés mergeando.
 3. Reúne los *overrides* de esta *session*. Si no hay ninguno claro, lista candidatos y pregunta. No escribas un no-op.
-4. Mergea:
-  - `articles`: upsert por término
-  - `english` / `spanish`: union, y saca el término de la lista contraria
+4. Mergea `articles` (upsert por término) y `english` / `spanish` (union, y saca el término de la lista contraria).
 5. Si no había archivo, crea uno con `"level": "mid"` más los *overrides*.
 6. Escribe pretty-print, newline al final.
 7. Confirma el path y el diff: qué se agregó o cambió. Di que `spanglish` ya puede usarlo en esta *session*.
-

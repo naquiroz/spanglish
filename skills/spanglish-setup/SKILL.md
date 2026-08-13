@@ -23,7 +23,7 @@ Si el JSON no existe, el *hook* no inyecta nada. La skill `spanglish` lee el arc
 ## Niveles
 
 | `level` | Qué hace |
-|---|---|
+| --- | --- |
 | `soft` | Muy sutil. Inglés solo para conceptos 100% técnicos: PR, Git, hook, commit, deploy. |
 | `mid` | Soft más anglicismos ambiguos: *naming*, *casing*, *hardcodeado*, *override*, *default*. |
 
@@ -36,11 +36,11 @@ Valores legales: `soft`, `mid`. Nada más.
 3. Si la persona ya dijo `soft` o `mid`, usa ese valor. Si no, explica los dos niveles en una o dos frases y pregunta. No adivines.
 4. Escribe el JSON (pretty-print, newline al final). Ejemplo mínimo:
 
-```json
-{
-  "level": "mid"
-}
-```
+   ```json
+   {
+     "level": "mid"
+   }
+   ```
 
 5. Confirma el path absoluto y el `level` guardado. Di que aplica en esta *session* si `spanglish` ya está activa, y en chats nuevos vía el *hook* del plugin.
 
