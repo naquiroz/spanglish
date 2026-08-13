@@ -1,0 +1,15 @@
+{
+  "description": "Injects spanglish config from ~/.spanglish.json at session start",
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 \"${CLAUDE_PLUGIN_ROOT}/scripts/spanglish-session-start\""
+          }
+        ]
+      }
+    ]
+  }
+}
