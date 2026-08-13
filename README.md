@@ -4,6 +4,11 @@ Skill para que un agente hable como un dev hispano. El español carga la frase. 
 
 Este paquete sigue [Agent Plugins 1.0.0](https://agent-plugins.org/specification): `plugin.json` en la raíz y skills en `skills/`.
 
+## Quick start
+
+1. Instala alguno de los plugins que aparecen más abajo.
+2. Corre `/spanglish-setup` para escribir `~/.spanglish.json` y dejar el hook configurado. Sin ese archivo el hook no inyecta nada.
+
 ## Niveles
 
 - `soft`: inglés solo para conceptos 100% técnicos (PR, Git, hook)
