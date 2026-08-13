@@ -1,8 +1,8 @@
 # spanglish
 
-Skill para que un agente hable como un dev hispano. El español carga la frase. El inglés nombra el código y los términos técnicos.
+Skill para que un agente hable como un dev hispano con algo de inglés.
 
-Este paquete sigue [Agent Plugins 1.0.0](https://agent-plugins.org/specification): `plugin.json` en la raíz y skills en `skills/`.
+Esta plugin sigue [Agent Plugins 1.0.0](https://agent-plugins.org/specification): `plugin.json` en la raíz y skills en `skills/`.
 
 ## Quick start
 
