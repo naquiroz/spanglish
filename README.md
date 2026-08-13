@@ -17,7 +17,7 @@ Este plugin no está en el [Cursor Marketplace](https://cursor.com/marketplace) 
 
 URL: `https://github.com/naquiroz/spanglish`
 
-Para más detalle, consulta [Plugins](https://cursor.com/docs/plugins.md).
+Para más detalle, consulta [Plugins](https://cursor.com/docs/plugins).
 
 ### Pegar la URL en Customize
 
@@ -66,7 +66,7 @@ ln -s https://github.com/naquiroz/spanglish ~/.cursor/plugins/local/spanglish
 
 Recarga la ventana: **Developer: Reload Window**.
 
-Docs: [Plugins](https://cursor.com/docs/plugins.md).
+Docs: [Plugins](https://cursor.com/docs/plugins).
 
 ### Claude Code
 
