@@ -2,7 +2,7 @@
 
 Skill para que un agente hable como un dev hispano con algo de inglés.
 
-Esta plugin sigue [Agent Plugins 1.0.0](https://agent-plugins.org/specification): `plugin.json` en la raíz y skills en `skills/`.
+Este plugin sigue [Agent Plugins 1.0.0](https://agent-plugins.org/specification): `plugin.json` en la raíz y skills en `skills/`.
 
 ## Quick start
 
