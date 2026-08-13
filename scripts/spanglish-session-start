@@ -1,0 +1,74 @@
+#!/usr/bin/env python3
+"""SessionStart hook: inject spanglish config from ~/.spanglish.json."""
+
+from __future__ import annotations
+
+import json
+import os
+import sys
+
+CONFIG = os.path.join(os.path.expanduser("~"), ".spanglish.json")
+
+
+def load_config() -> dict | None:
+    try:
+        with open(CONFIG, encoding="utf-8") as fh:
+            data = json.load(fh)
+    except (OSError, json.JSONDecodeError):
+        return None
+    if not isinstance(data, dict):
+        return None
+    return data
+
+
+def context_for(cfg: dict) -> str:
+    level = cfg.get("level")
+    if level not in ("soft", "mid"):
+        level = "mid"
+    overrides = cfg.get("overrides")
+    if not isinstance(overrides, dict):
+        overrides = {}
+    payload = json.dumps(
+        {"level": level, "overrides": overrides},
+        ensure_ascii=False,
+        separators=(",", ":"),
+    )
+    return (
+        "Spanglish activo en esta conversación, unless conversation started in english. Sigue la skill `spanglish`. "
+        f"Config: {payload}. "
+        "Un override de esta session gana sobre este JSON. "
+        "No hagas autosave de overrides; usa persist-spanglish-overrides _upon request_."
+    )
+
+
+def payload_for(msg: str) -> dict:
+    if os.environ.get("CURSOR_PLUGIN_ROOT"):
+        return {"additional_context": msg}
+    if os.environ.get("COPILOT_CLI"):
+        return {"additionalContext": msg}
+    # Claude plugin, Codex plugin (PLUGIN_ROOT / CLAUDE_PLUGIN_ROOT), Codex user hooks (CODEX_HOME)
+    if (
+        os.environ.get("CLAUDE_PLUGIN_ROOT")
+        or os.environ.get("PLUGIN_ROOT")
+        or os.environ.get("CODEX_HOME")
+    ):
+        return {
+            "hookSpecificOutput": {
+                "hookEventName": "SessionStart",
+                "additionalContext": msg,
+            }
+        }
+    return {"additionalContext": msg}
+
+
+def main() -> int:
+    cfg = load_config()
+    if cfg is None:
+        sys.stdout.write("{}\n")
+        return 0
+    sys.stdout.write(json.dumps(payload_for(context_for(cfg)), ensure_ascii=False) + "\n")
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

@@ -1,0 +1,13 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "spanglish",
+  "version": "0.1.0",
+  "description": "Habla y escribe en spanglish de desarrollo: español para la narración, inglés para el código y los términos técnicos.",
+  "author": {
+    "name": "Nicolas Quiroz",
+    "url": "https://github.com/naquiroz"
+  },
+  "homepage": "https://github.com/naquiroz/spanglish",
+  "repository": "https://github.com/naquiroz/spanglish",
+  "keywords": ["spanglish", "spanish", "skills", "engineering"]
+}

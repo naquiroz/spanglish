@@ -1,0 +1,16 @@
+{
+  "description": "Injects spanglish config from ~/.spanglish.json at session start",
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "startup|resume",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 \"${PLUGIN_ROOT}/scripts/spanglish-session-start\""
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "spanglish",
+  "description": "Marketplace con el plugin de spanglish de desarrollo",
+  "owner": {
+    "name": "Nicolas Quiroz",
+    "url": "https://github.com/naquiroz"
+  },
+  "plugins": [
+    {
+      "name": "spanglish",
+      "description": "Habla y escribe en spanglish de desarrollo: español para la narración, inglés para el código y los términos técnicos.",
+      "version": "0.1.0",
+      "source": "./",
+      "author": {
+        "name": "Nicolas Quiroz",
+        "url": "https://github.com/naquiroz"
+      }
+    }
+  ]
+}

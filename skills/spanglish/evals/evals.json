@@ -1,0 +1,23 @@
+{
+  "skill_name": "spanglish",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Explica por qué este componente pega dos veces al endpoint. Sé directo. El código está en inglés.\n\n```tsx\nuseEffect(() => {\n  fetchOrders();\n}, [filters]);\n```\n\n`fetchOrders` vive en el mismo componente y `filters` es un objeto que se recrea en cada render.",
+      "expected_output": "Explicación en spanglish: narración en español, términos como hook, render, endpoint y fetch en inglés, identificadores `fetchOrders` y `filters` intactos. No traduce hook como gancho ni fetch como obtención. Frases cortas.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Redacta la descripción del PR para este bugfix. El equipo escribe PRs en español. El código usa `saveOrder`, `status` y `OrderService`.\n\nEl race: dos requests concurrentes al mismo row. El último update pisa el status. El fix serializa los writes con un lock por order id. Los tests de OrderService cubren el caso.",
+      "expected_output": "Descripción de PR en spanglish profesional (no meme). Identificadores en inglés. Palabras como race, request, row, update, lock y test en inglés. Archivo/equipo/caso en español. Sin debería. Sin nombres de función inventados.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Necesito un helper para obtener el usuario por id. El archivo ya tiene `getOrderById` y `getProductById`. ¿Cómo lo nombro y qué hace? Explícamelo para el review.",
+      "expected_output": "Propone `getUserById` (sigue el archivo, inglés). No inventa híbridos tipo obtenerUserById o getUsuarioById. La explicación está en español con endpoint/helper/review en inglés si aplica.",
+      "files": []
+    }
+  ]
+}

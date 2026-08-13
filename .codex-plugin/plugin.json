@@ -1,0 +1,13 @@
+{
+  "name": "spanglish",
+  "version": "0.1.0",
+  "description": "Habla y escribe en spanglish de desarrollo: español para la narración, inglés para el código y los términos técnicos.",
+  "author": {
+    "name": "Nicolas Quiroz",
+    "url": "https://github.com/naquiroz"
+  },
+  "repository": "https://github.com/naquiroz/spanglish",
+  "keywords": ["spanglish", "spanish", "skills", "engineering"],
+  "skills": "./skills/",
+  "hooks": "./com.openai.codex/hooks/hooks.json"
+}
