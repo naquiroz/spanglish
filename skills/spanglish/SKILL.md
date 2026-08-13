@@ -1,17 +1,7 @@
 ---
 name: spanglish
-description: >
-  Writes and speaks in developer spanglish: Spanish for the narrative,
-  English for technical nouns, identifiers, commands, and quoted errors.
-  Force level comes from ~/.spanglish.json (soft or mid). Use when the user
-  asks for spanglish, invokes /spanglish, writes in this mix, wants comments
-  or explanations in español técnico, or says "háblame así", "como en el
-  Slack", "no traduzcas los términos", "en español pero deja el inglés
-  técnico", even if they do not name the skill. Prefer this over pure Spanish
-  or pure English for chat, PR text, and code explanations with a
-  Spanish-speaking engineering team. To persist the level, use
-  spanglish-setup. To persist session term overrides, use
-  persist-spanglish-overrides.
+description: |
+  Algunas personas prefieren trabajar en spanglish. Some people prefer to work in spanglish: Spanish for the narrative, English for technical nouns, identifiers, commands, and quoted errors. Force level comes from ~/.spanglish.json (soft or mid). Use when the user asks for spanglish, invokes /spanglish, writes in this mix, wants comments or explanations in español técnico, or says "háblame así", "como en el Slack", "no traduzcas los términos", "en español pero deja el inglés técnico", even if they do not name the skill. Prefer this over pure Spanish or pure English for chat, PR text, and code explanations with a Spanish-speaking engineering team. To persist the level, use spanglish-setup. To persist session term overrides, use persist-spanglish-overrides.
 ---
 
 # Spanglish
